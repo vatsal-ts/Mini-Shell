@@ -7,12 +7,12 @@
 * [Mindmap/Overview](#overview-points)
 * [Some specifications](#specifications-to-follow)
 
-## SPECIFICATIONS FOLLOWED FOR MINISHELL
+## Specifications followed for minishell
 * Works on LINUX
 * Written using C++ (POSIX based system) using g++ 9.3.0 for Ubuntu
 * MiniShell simulates bash and tries to include a reasonable subset of commands.
 
-## KEY FEATURES INCLUDED:
+## Key features included
 ### Environment variables:
 * <b>printenv</b> lists all environment variables.
 * <b>setenv</b><br/><code>(variable_name = variable_value)</code><br/>changes value of variable_name as per
@@ -39,7 +39,7 @@ without using *execvp* and work perfectly:
 *setenv variable_name=new_variable_value*</code><br/>
 If this is successful, you should get a "VALUE CHANGED" prompt and the same can be checked by writing the variable name in the terminal which will output the value of the environment variable.
 
-## CONSTRAINTS FOR MINISHELL
+## Constraints for minishell
 ### Single Level Piping only 
 On recognising piping, the command is executed directly
 ### Single Level Redirection Only 
@@ -47,10 +47,10 @@ On recognising piping, the command is executed directly,multi-level redirection 
 ### No simultaneous Piping and Redirection
 Redirection is checked for only if piping is not present
 
-## INSTRUCTIONS TO RUN MINISHELL
+## Instructions to run minishell
 1. Compile with g++ or gnu post 9.2
 2. Run with linux based OS
-## OVERVIEW POINTS
+## Overview points
 1. The Shell boots up with the following screen giving developer credits and information and welcoming user to the shell, which clears and starts the shell after a delay of 4(max) seconds. The shell takes in input and produces corresponding output, in tandem with the flowchart defined for general systems.
 2. The shell implements internal commands flawlessly and its details can be seen by typing
 help in the terminal. Most commands of UNIX work too.
@@ -85,7 +85,7 @@ help in the terminal. Most commands of UNIX work too.
 28. getenv
 
 
-## SPECIFICATIONS TO FOLLOW
+## Specifications to follow
 * Blank Lines are handled quite well, they don’t get recorded in history.
 * Redirection : MAKE SURE TO type both the command with no space before and after the
 redirection symbol (> , <, >>)
