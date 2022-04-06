@@ -8,22 +8,22 @@
 * [Some specifications](#specifications-to-follow)
 
 ## SPECIFICATIONS FOLLOWED FOR MINISHELL
-● Works on LINUX
-● Written using C++ (POSIX based system) using g++ 9.3.0 for Ubuntu
-● MiniShell simulates bash and tries to include a reasonable subset of commands.
+* Works on LINUX
+* Written using C++ (POSIX based system) using g++ 9.3.0 for Ubuntu
+* MiniShell simulates bash and tries to include a reasonable subset of commands.
 
 ## KEY FEATURES INCLUDED:
 ### Environment variables:
-● printenv: lists all environment variables.
-● setenv( variable_name = variable_value): changes value of variable_name as per
+* printenv: lists all environment variables.
+* setenv( variable_name = variable_value): changes value of variable_name as per
 requirement.
-● Any particular environment variable can be seen from writing the name of that
+* Any particular environment variable can be seen from writing the name of that
 variable or writing echo $VAR where VAR is variable name.(shown later too.)
 ### Path functions: Most UNIX Commands are enterable.
 ### Parsing
 ### Piping
 ### Input and Output redirection:
-● Read mode, Write mode, Append mode
+* Read mode, Write mode, Append mode
 ### The following commands work flawlessly (internal+external) 
 however due to limitations of posix based compiler having access to the internal workings of an extended system,some natural functions which are internal to a shell but not to a C++ program may not
 work.Inspite of this, the following have been explicitly defined as internal commands to
@@ -87,10 +87,10 @@ help in the terminal. Most commands of UNIX work too.
 
 
 ## SPECIFICATIONS TO FOLLOW
-● Blank Lines are handled quite well, they don’t get recorded in history.
-● Redirection : MAKE SURE TO type both the command with no space before and after the
+* Blank Lines are handled quite well, they don’t get recorded in history.
+* Redirection : MAKE SURE TO type both the command with no space before and after the
 redirection symbol (> , <, >>)
-● Wrong commands give prompt to appropriate errors.
-● setenv : type command as setenv (environment variable) = (new value)
+* Wrong commands give prompt to appropriate errors.
+* setenv : type command as setenv (environment variable) = (new value)
 Make sure you use appropriate spacings.
-● Exiting deletes history file(with exit or quit or x)
+* Exiting deletes history file(with exit or quit or x)
