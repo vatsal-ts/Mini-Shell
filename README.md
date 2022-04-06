@@ -14,15 +14,15 @@
 
 ## KEY FEATURES INCLUDED:
 ### Environment variables:
-* printenv: lists all environment variables.
-* setenv( variable_name = variable_value): changes value of variable_name as per
+* <b>printenv</b> lists all environment variables.
+* <b>setenv</b><br/><code>(variable_name = variable_value)</code><br/>changes value of variable_name as per
 requirement.
 * Any particular environment variable can be seen from writing the name of that
 variable or writing echo $VAR where VAR is variable name.(shown later too.)
 ### Path functions: Most UNIX Commands are enterable.
-### Parsing
-### Piping
-### Input and Output redirection:
+#### Parsing
+#### Piping
+#### Input and Output redirection:
 * Read mode, Write mode, Append mode
 ### The following commands work flawlessly (internal+external) 
 however due to limitations of posix based compiler having access to the internal workings of an extended system,some natural functions which are internal to a shell but not to a C++ program may not
@@ -34,23 +34,22 @@ without using *execvp* and work perfectly:
 4. exit (or quit or x)
 5. history
 6. printenv
-7. clear
-*PLEASE NOTE* : setenv works in the following format:
-*setenv variable_name = new_variable_value*
-If this is successful, you should get a VALUE CHANGED prompt and the same can be checked by writing the variable name in the terminal which will output the value of the environment variable.
+7. clear<br/>
+**PLEASE NOTE* : setenv works in the following format:<br/><code>
+*setenv variable_name=new_variable_value*</code><br/>
+If this is successful, you should get a "VALUE CHANGED" prompt and the same can be checked by writing the variable name in the terminal which will output the value of the environment variable.
 
 ## CONSTRAINTS FOR MINISHELL
 ### Single Level Piping only 
 On recognising piping, the command is executed directly
 ### Single Level Redirection Only 
-On recognising piping, the command is executed directly
+On recognising piping, the command is executed directly,multi-level redirection is restricted.
 ### No simultaneous Piping and Redirection
 Redirection is checked for only if piping is not present
-### Multi-Redirection is not allowed
 
 ## INSTRUCTIONS TO RUN MINISHELL
-1. Compile with g++ or similar gnu based compiler post c++14
-2. Run with linux based os
+1. Compile with g++ or gnu post 9.2
+2. Run with linux based OS
 ## OVERVIEW POINTS
 1. The Shell boots up with the following screen giving developer credits and information and welcoming user to the shell, which clears and starts the shell after a delay of 4(max) seconds. The shell takes in input and produces corresponding output, in tandem with the flowchart defined for general systems.
 2. The shell implements internal commands flawlessly and its details can be seen by typing
