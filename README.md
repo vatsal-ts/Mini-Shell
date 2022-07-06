@@ -6,6 +6,7 @@
 * [Instructions](#instructions-to-run-minishell)
 * [Mindmap/Overview](#overview-points)
 * [Some specifications](#specifications-to-follow)
+* [Examples of some functions](#examples)
 
 ## Specifications followed for minishell
 * Works on LINUX
@@ -51,7 +52,10 @@ Redirection is checked for only if piping is not present
 1. Compile with g++ or gnu post 9.2
 2. Run with linux based OS
 ## Overview points
-1. The Shell boots up with the following screen giving developer credits and information and welcoming user to the shell, which clears and starts the shell after a delay of 4(max) seconds. The shell takes in input and produces corresponding output, in tandem with the flowchart defined for general systems.
+1. The Shell boots up with the following screen giving developer credits and information and welcoming user to the shell. 
+<!-- ![1](https://user-images.githubusercontent.com/84033475/177593242-57c6fd02-846a-46d2-8a40-1056518f8bfc.JPG) -->
+<img src="https://user-images.githubusercontent.com/84033475/177593948-1f4f0036-d2e5-4426-ba42-15344bbde8b0.JPG" alt="drawing" width="75%">
+Which clears and starts the shell after a delay of 4(max) seconds. The shell takes in input and produces corresponding output, in tandem with the flowchart defined for general systems.
 2. The shell implements internal commands flawlessly and its details can be seen by typing
 help in the terminal. Most commands of UNIX work too.
 #### Main commands are :
@@ -93,3 +97,21 @@ redirection symbol (> , <, >>)
 * setenv : type command as setenv (environment variable) = (new value)
 Make sure you use appropriate spacings.
 * Exiting deletes history file(with exit or quit or x)
+
+## Examples
+* help
+<img src="https://user-images.githubusercontent.com/84033475/177595783-5efc456c-6067-4a8a-ab0b-b0e05a813b5b.JPG" alt="drawing" width="55%"/>
+* Environment variables output (all kinds)
+<img src="https://user-images.githubusercontent.com/84033475/177593242-57c6fd02-846a-46d2-8a40-1056518f8bfc.JPG" alt="drawing" width="60%"/>
+* cd
+<img src="https://user-images.githubusercontent.com/84033475/177596158-6dd311d3-c89e-4ebc-8675-eb9b7dd111fb.JPG" alt="drawing" width="50%"/>
+* Input redirection,output redirection(write and append)
+<img src="https://user-images.githubusercontent.com/84033475/177596551-1c463728-ca17-4f36-8339-206bc3084d26.JPG" alt="drawing" width="60%"/>
+* History (the file is created in user’s tmp folder which MUST be present in all UNIX based systems)
+<img src="https://user-images.githubusercontent.com/84033475/177597137-93e323c7-eaef-431b-8a68-23a8f461e324.JPG" alt="drawing" height="300px" />
+* Exit
+<img src="https://user-images.githubusercontent.com/84033475/177597423-5762ea52-939e-4a48-97a5-4c4db8c8755a.JPG" alt="drawing" width="60%" />
+<!-- ![9](https://user-images.githubusercontent.com/84033475/177597423-5762ea52-939e-4a48-97a5-4c4db8c8755a.JPG) -->
+* Piping example
+<img src="https://user-images.githubusercontent.com/84033475/177597881-0ef99562-a36e-4a0f-8102-1bb61f65a639.JPG" alt="drawing" width="70%" />
+
